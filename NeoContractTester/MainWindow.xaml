@@ -1,0 +1,23 @@
+﻿<Window x:Class="NeoContractTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NeoContractTester"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="CanResize">
+    <Grid Margin="0,0,2,13">
+        <DataGrid x:Name="ActionsDataGrid" HorizontalAlignment="Left" Height="253" Margin="643,131,0,0" VerticalAlignment="Top" Width="500" ColumnWidth="315" IsReadOnly="True"/>
+        <Button x:Name="AddActionButton" Content="Add" HorizontalAlignment="Left" Margin="643,106,0,0" VerticalAlignment="Top" Width="75" Click="AddActionButton_Click"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="725,106,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="RunFunctionButton" Content="Run" HorizontalAlignment="Left" Margin="805,106,0,0" VerticalAlignment="Top" Width="75" Click="RunFunctionButton_Click"/>
+        <Label Content="Actions" HorizontalAlignment="Left" Margin="644,70,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="StoreDataGrid" HorizontalAlignment="Left" Height="253" Margin="10,131,0,0" VerticalAlignment="Top" Width="500" ColumnWidth="200" IsReadOnly="True"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="90,106,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="170,106,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Label Content="Storage" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="AVM File Path:" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.474,0.615" Width="100"/>
+        <TextBox x:Name="FilePathTextBox" HorizontalAlignment="Left" Height="23" Margin="115,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1000"/>
+    </Grid>
+</Window>
